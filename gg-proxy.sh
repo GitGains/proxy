@@ -2,7 +2,7 @@
 
 GG_PROXY_SCRIPT="$HOME/gg-proxy.sh"
 GG_PROXY_CONFIG="$HOME/.gg-proxy"
-GG_PROXY_VERSION="1.0.2"
+GG_PROXY_VERSION="1.0.3"
 
 GG_GITHUB_REPO="GitGains/proxy"
 
@@ -254,9 +254,9 @@ gg-install() {
   grep -qF -- "$line" "$profile_file" || echo "$line" >> "$profile_file"
 
   # Save the proxy variables
+  gg-deactivate
   rm -rf "$GG_PROXY_CONFIG"
   gg-save_proxy_variables "$1" "$2"
-  gg-deactivate
   gg-activate
   echo "GitGains Proxy installed ✅"
 }
