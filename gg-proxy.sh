@@ -2,7 +2,7 @@
 
 GG_PROXY_SCRIPT="$HOME/gg-proxy.sh"
 GG_PROXY_CONFIG="$HOME/.gg-proxy"
-GG_PROXY_VERSION="1.0.1"
+GG_PROXY_VERSION="1.0.2"
 
 GG_GITHUB_REPO="GitGains/proxy"
 
